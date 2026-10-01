@@ -2,7 +2,7 @@
 import ReadButton from "@/components/bookDetails/ReadButton";
 import WishListButton from "@/components/bookDetails/WishListButton";
 import Image from "next/image";
-import Link from "next/link";
+
 
 interface IDetails {
   params: Promise<{
@@ -13,7 +13,9 @@ interface IDetails {
 const BookDetailsPage = async ({ params }: IDetails) => {
   const { id } = await params;
 
-  const res = await fetch(`http://localhost:5000/books/${id}`);
+  const res = await fetch(
+  `${process.env.NEXT_PUBLIC_SERVER_BASE_URL}/books/${id}`
+);
 
   if (!res.ok) {
     throw new Error("Book not found");

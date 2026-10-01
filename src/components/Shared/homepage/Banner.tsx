@@ -7,7 +7,7 @@ import bannerImg from "@/assets/hero_img.jpg";
 
 const Banner = () => {
   return (
-    <div className="mx-4 my-6 overflow-hidden rounded-3xl bg-gradient-to-br from-gray-950 via-gray-900 to-gray-800 px-6 py-8 shadow-xl sm:mx-6 md:mx-10 md:px-12 md:py-10 lg:mx-16 lg:px-16">
+    <div className="mx-4 my-6 overflow-hidden rounded-3xl bg-linear-to-br from-gray-950 via-gray-900 to-gray-800 px-6 py-8 shadow-xl sm:mx-6 md:mx-10 md:px-12 md:py-10 lg:mx-16 lg:px-16">
       <div className="flex flex-col-reverse items-center justify-between gap-8 md:flex-row">
         
         {/* Left Content */}
